@@ -130,19 +130,23 @@ function transformBubbleAndParagraph(bubbleIndex, resetBubble) {
 	returnById("imageHeader").style.opacity = 1;
 	}, 400);
 	} 
-	/*returnById("theimage").style.opacity = 0;
-	returnById("imageHeader2").style.opacity = 0;
-	returnById("trueParagraph1").style.opacity = 0;
-	setTimeout(function(){
-	returnById("theimage").src = imgArray[bubbleIndex].src;
-	returnById("theimage").style.opacity = 1;
-	returnById("imageHeader2").style.opacity = 1;
-	returnById("trueParagraph1").style.opacity = 1;
-	returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex]
-	returnById("imageHeader").style.opacity = 1;
-	}, 400);*/
+	if (document.documentElement.clientWidth < 1200) {
+		bubbleArray[bubbleIndex].style.backgroundColor = "pink";
+		returnById("imageHeader").style.opacity = 0;
+		returnById("theimage").style.opacity = 0;
+		returnById("imageHeader2").style.opacity = 0;
+		returnById("trueParagraph1").style.opacity = 0;
+		setTimeout(function(){
+		returnById("theimage").style.opacity = 1;
+		returnById("imageHeader").style.opacity = 1;
+		returnById("imageHeader2").style.opacity = 1;
+		returnById("trueParagraph1").style.opacity = 1;
+		returnById("theimage").src = imgArray[bubbleIndex].src;
+		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
+		}, 400);
+	}
 }
 
 function next() {
