@@ -37,7 +37,7 @@ function returnById(x) {
     return document.getElementById(x);
 }
 
-var headerArray = ["Welcome", "I just need you to know", "The one constant in life"];
+var headerArray = ["Happy birthday, Brendo. A reminder:", "And finally, I just need you to know", "The one constant in life"];
 
 var paragraphArray = ["CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9", "CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
