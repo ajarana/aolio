@@ -98,7 +98,17 @@ only screen and (max-device-width : 1200px){
 .aolioIcon #aolio {font-size: 1.6em;}
 }
 
-.aolioIcon i { 
+.aolioIcon #caret1 {
+	position: absolute;
+	top: 1px;
+}
+
+.aolioIcon #caret2 {
+	position: absolute;
+	top: 9px;
+	left: 12px;
+}
+/*.aolioIcon i { 
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -109,12 +119,36 @@ only screen and (max-device-width : 1200px){
 .aolioIcon i:nth-child(1) {
 	background-image: url("caret-arrow-up-f10000.png");
 }
+@media only screen and (max-device-width : 900px){
+.aolioIcon i:nth-child(1) {font-size: 125%!important}
+}
+@media only screen and (max-device-width : 700px){
+.aolioIcon i:nth-child(1) {font-size: 175%!important}
+}
+@media only screen and (max-device-width : 500px){
+.aolioIcon i:nth-child(1) {font-size: 225%!important}
+}
+@media only screen and (max-device-width : 400px){
+.aolioIcon i:nth-child(1) {font-size: 250%!important}
+}
 
 .aolioIcon i:nth-child(2) {
 	background-image: url("caret-down-aaa.png");
 	left: 16px;
 	top: 9px;
 }
+@media only screen and (max-device-width : 900px){
+.aolioIcon i:nth-child(2) {font-size: 125%!important}
+}
+@media only screen and (max-device-width : 700px){
+.aolioIcon i:nth-child(2)y {font-size: 175%!important}
+}
+@media only screen and (max-device-width : 500px){
+.aolioIcon i:nth-child(2) {font-size: 225%!important}
+}
+@media only screen and (max-device-width : 400px){
+.aolioIcon i:nth-child(2) {font-size: 250%!important}
+}*/
 
 
 
