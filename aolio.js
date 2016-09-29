@@ -135,7 +135,7 @@ function transformBubbleAndParagraph(bubbleIndex, resetBubble) {
 		returnById("imageHeader").style.opacity = 0;
 		returnById("theimage").style.opacity = 0;
 		returnById("imageHeader2").style.opacity = 0;
-		returnById("trueParagraph1").style.opacity = 0;
+		returnById("trueParagraph1").style.opacity = "0!important";
 		setTimeout(function(){
 		returnById("theimage").style.opacity = 1;
 		returnById("imageHeader").style.opacity = 1;
