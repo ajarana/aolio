@@ -1,1 +1,113 @@
-<h1> something something lol </h1>
+<html>
+
+<head> 
+<title>Test - Aolio</title>
+<script type="text/javascript" src="aolio.js"></script>
+<link rel="stylesheet" type="text/css" href="aolio.css">
+</head>
+
+<body>
+
+<div id="theParent">
+
+	<div id="header">
+	
+	  <div id="headerPosition">
+	  
+	    <div class="aolioIcon">
+			<i></i>
+			<i></i>
+			<a id="aolio" href="/">Aolio</a>
+		</div>
+	
+	  </div>
+    </div>
+
+	<div id="imageAndParagraph">
+	
+	<div id="imagePosition">
+	
+	<div class="headerArrowParent" id="imageHeaderHolder">
+			<div class="headerAndArrow" id="imageHeader" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
+				<h1 class="headers" id="firstHeader" style="display: block; opacity: 1"> Welcome </h1>
+				<div onclick="expandOrCompress()" id=expandAndCompress></div>
+			</div>
+	</div>
+	<div id="imageParagraphAndImageContainer">
+		<div id="imageContainer">
+
+			<div id="imageHolder" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
+				<div id="actualImage"> 
+					<img id ="theimage" src="home2.png" width="568px"> 
+				</div>
+			</div>
+		</div>	
+		<div id="trueParagraphContainer" style="margin-left: -50%">
+			<div id="trueParagraphAlign">
+				<div class="headerArrowParent" id="imageHeaderHolder2">
+					<div class="headerAndArrow" id="imageHeader2" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
+						<h2 class="headers" id="secondHeader" style="opacity: 0"> Welcome </h2>
+					</div>
+				</div>
+				<p id="trueParagraph1" style="opacity: 0" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()"> 
+				CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 
+				CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="bubbleParent">
+			<div id="bubbleContainer" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
+				<div style="background-color: #2b6dad" class="bubble" id="bubble1" onclick="transformBubbleAndParagraph(0,1)"></div>
+				<div class="bubble" id="bubble2" onclick="transformBubbleAndParagraph(1,1)"></div>
+				<div class="bubble" id="bubble3" onclick="transformBubbleAndParagraph(2,1)"></div>
+			</div>   
+	</div>
+	</div>
+	</div>
+
+	<div id="emailHeader" style="display: flex; justify-content: center; padding: 0 10px; padding-top: 50px;">
+		<div id="headerPosition" style="width: 568px;">
+			<h2 style="margin: 20px 0; font-size: 1.5em;">Tell me when it's ready</h2>
+		</div>
+	</div>
+	
+	<div id="form" style="display:flex; justify-content: center; padding: 0 10px; padding-bottom: 100px;">
+		<div id="formPosition" style="width: 568px; display: flex;">
+			<div id="email" style="width: 75%">
+				<input placeholder="Email Address" onfocus="this.placeholder=' '" onblur="this.placeholder='Email Address'"
+				style="font-size: 0.83em; border: 1px solid #abb0b2; padding: 10px 0; padding-left: 10px; width: 100%;
+				border-radius: 4px;">
+			</div>
+			<div id="submit" style="width: 25%; display: flex; justify-content: flex-end;">
+				<input value="Send" style="font-size: 0.83em; background-color: #da2225; border: 1px solid #da2225;
+				padding: 10px 0; border-radius: 4px; width: 80%; text-align: center; color: white;
+				outline: none; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none;
+				-khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+				user-select: none;" readonly>
+			</div>
+		</div>
+   </div>
+	
+
+	<div id="footer">
+		
+			<div id="footerLinks">
+				<div class="linkHolder">
+					<a href="about">About</a>
+					<a href="contact">Contact Us</a>
+					<a href="/">Blog</a>
+				</div>
+				<span id="socialMedia">
+					<img class="socialIcon" src="fb2.svg" width="24px" height="24px">
+					<img class="socialIcon" id ="twitter" src="Twitter_Social_Icon_Rounded_Square_Color.svg" width="24px" height="24px">
+					<img class="socialIcon" id ="youtube" src="YouTube-social-square_red_24px" width="24px" height="25px">
+				</span>
+			</div>
+	
+	</div>
+	
+</div>
+
+</body>
+</html>
