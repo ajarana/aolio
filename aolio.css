@@ -103,7 +103,7 @@ only screen and (max-device-width : 1200px){
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	top: 4px;
+	top: 1px;
 }
 
 .aolioIcon i:nth-child(1) {
@@ -113,7 +113,7 @@ only screen and (max-device-width : 1200px){
 .aolioIcon i:nth-child(2) {
 	background-image: url("caret-down-aaa.png");
 	left: 16px;
-	top: 12px;
+	top: 9px;
 }
 
 
