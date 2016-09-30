@@ -1,60 +1,28 @@
-
-/*function transform1() {
-  firstBubble = document.getElementById("bubble1");
-  firstBubble.style.backgroundColor = "#da2225";
-  setTimeout("reset()",1000);
-}
-
-function transform2() {
-  secondBubble = document.getElementById("bubble2");
-  secondBubble.style.backgroundColor = "#da2225";
-  setTimeout("reset()",1000);
-}
-
-function transform3() {
-  thirdBubble = document.getElementById("bubble3");
-  thirdBubble.style.backgroundColor = "#da2225";
-  setTimeout("reset()",1000);
-}
-
-function reset() {
-
-  if (firstBubble.style.backgroundColor == "rgb(218, 34, 37)") {
-	  firstBubble.style.backgroundColor = "#2b6dad";
-      transform2();
-      }
-  else if (secondBubble.style.backgroundColor == "rgb(218, 34, 37)") {
-	  secondBubble.style.backgroundColor = "#2b6dad";
-	  transform3()
-	  }
-  else {
-	  thirdBubble.style.backgroundColor = "#2b6dad";
-	  transform1()
-	  } 
-}*/
-
 function returnById(x) {
     return document.getElementById(x);
 }
 
-var headerArray = ["Happy birthday, Brendo. A reminder:", "And finally, I just need you to know", "The one constant in life"];
+var headerArray = ["All your news and interests", "A community for everyone", "Vote on your favorite topics"];
 
-var paragraphArray = ["CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
-CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9", "CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
-CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
-CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9", "CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 \
-CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 "];
+var paragraphArray = ["Whether you want to browse the latest news, discuss trending topics, submit\
+				something you found interesting, or any combination of the above, Aolio can do all this and more. Easily customize your\
+				feed and keep track of all news and discussions you find interesting.", "Offering both moderated and unmoderated communities, \
+				each offer their own wealth of advantages. Try a moderated community for a more controlled environment, or enjoy (near) complete \
+				freedom in an unmoderated community. In either case, you ultimately have the choice to decide on the content that's most \
+				interesting and relevant to you.", "Everything that's submitted is subject to voting. The community gets to decide what they find \
+				the most interesting and subsequently what will be on the front page for all to see. Users can also vote on comments \
+				according to their relevancy and appeal."];
 
 var imgArray = new Array();
 
 imgArray[0] = new Image();
-imgArray[0].src = 'BrendanOttenPicture.jpg';
+imgArray[0].src = 'home2.png';
 
 imgArray[1] = new Image();
-imgArray[1].src = 'doublelift.jpg';
+imgArray[1].src = 'forum2.png';
 
 imgArray[2] = new Image();
-imgArray[2].src = 'theman.png';
+imgArray[2].src = 'comments2.png';
 
 var bubbleIndex = resetBubble = 0;
 
@@ -83,53 +51,64 @@ function transformBubbleAndParagraph(bubbleIndex, resetBubble) {
 	for (i =0; i < bubbleArray.length; i++) {
 		bubbleArray[i].style.backgroundColor = "";
 	}
-	if (returnById("trueParagraphContainer").style.marginLeft !== "-50%") {
-		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
-		returnById("imageHeader").style.opacity = 1;
-	returnById("theimage").style.opacity = 0;
-	returnById("imageHeader2").style.opacity = 0;
-	returnById("trueParagraph1").style.opacity = 0;
-	setTimeout(function(){
-	returnById("theimage").src = imgArray[bubbleIndex].src;
-	returnById("theimage").style.opacity = 1;
-	returnById("imageHeader2").style.opacity = 1;
-	returnById("trueParagraph1").style.opacity = 1;
-	returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex]
-	returnById("imageHeader").style.opacity = 1;
-	}, 400);
-	}
-	else if (resetBubble!==0) {
-		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
+	if (returnById("trueParagraphContainer").style.marginLeft == "-50%") {
+		bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad";
 		returnById("imageHeader").style.opacity = 0;
-	returnById("theimage").style.opacity = 0;
-	returnById("imageHeader2").style.opacity = 0;
-	returnById("trueParagraph1").style.opacity = 0;
-	setTimeout(function(){
-	returnById("theimage").src = imgArray[bubbleIndex].src;
-	returnById("theimage").style.opacity = 1;
-	returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex]
-	returnById("imageHeader").style.opacity = 1;
-	}, 400);
+		returnById("theimage").style.opacity = 0;
+		setTimeout(function(){
+		returnById("theimage").style.opacity = 1;
+		returnById("imageHeader").style.opacity = 1;
+		returnById("theimage").src = imgArray[bubbleIndex].src;
+		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
+		}, 400);
 	}
 	else {
-		bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad"; 
+		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
+		returnById("theimage").style.opacity = 0;
+		returnById("imageHeader2").style.opacity = 0;
+		returnById("trueParagraph1").style.opacity = 0;
+		setTimeout(function(){
+		returnById("theimage").style.opacity = 1;
+		returnById("imageHeader2").style.opacity = 1;
+		returnById("trueParagraph1").style.opacity = 1;
+		returnById("theimage").src = imgArray[bubbleIndex].src;
+		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
+		}, 400);
+	}
+	if (returnById("trueParagraphContainer").style.display == "block") {
+		bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad";
 		returnById("imageHeader").style.opacity = 0;
-	returnById("theimage").style.opacity = 0;
-	returnById("imageHeader2").style.opacity = 0;
-	returnById("trueParagraph1").style.opacity = 0;
-	setTimeout(function(){
-	returnById("theimage").src = imgArray[bubbleIndex].src;
-	returnById("theimage").style.opacity = 1;
-	returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
-	returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex]
-	returnById("imageHeader").style.opacity = 1;
-	}, 400);
-	} 
+		returnById("theimage").style.opacity = 0;
+		returnById("imageHeader2").style.opacity = 0;
+		returnById("trueParagraph1").style.opacity = 0;
+		setTimeout(function(){
+		returnById("theimage").style.opacity = 1;
+		returnById("imageHeader").style.opacity = 1;
+		returnById("imageHeader2").style.opacity = 1;
+		returnById("trueParagraph1").style.opacity = 1;
+		returnById("theimage").src = imgArray[bubbleIndex].src;
+		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
+		}, 400);
+	}
+	if (returnById("trueParagraphContainer").style.marginLeft == "-50%" && resetBubble!==0) {
+		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
+		returnById("imageHeader").style.opacity = 0;
+		returnById("theimage").style.opacity = 0;
+		setTimeout(function(){
+		returnById("theimage").style.opacity = 1;
+		returnById("imageHeader").style.opacity = 1;
+		returnById("theimage").src = imgArray[bubbleIndex].src;
+		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
+		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
+		}, 400);
+	}	
 }
 
 function next() {
@@ -141,7 +120,10 @@ function next() {
 }
 
 function resetInterval() {
-	if (returnById("trueParagraphContainer").style.marginLeft !== "-50%") {
+	if (returnById("trueParagraphContainer").style.marginLeft !== "-50%" && returnById("trueParagraphContainer").style.display == "flex") {
+		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
+		returnById("trueParagraph1").style.opacity = 1;
+		returnById("imageHeader2").style.opacity = 1;
 		clearInterval(interval);
 	}
 	else {
@@ -150,10 +132,33 @@ function resetInterval() {
 	}
 }
 
+function jsMediaQuery(jmq){
+ if (jmq.matches){ // if media query matches -- effectively a js media query
+  returnById("trueParagraphContainer").style.display = "block";
+  bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad";
+  returnById("trueParagraph1").style.opacity = 1;
+  returnById("imageHeader2").style.opacity = 1;
+  resetInterval();
+  
+ }
+ else{
+  returnById("trueParagraphContainer").style.display = "flex";
+  returnById("trueParagraph1").style.opacity = 0;
+  returnById("imageHeader2").style.opacity = 0;  
+  resetInterval();
+ }
+}
+
+var jmq = window.matchMedia("only screen and (max-width : 1200px),only screen and (max-device-width : 1200px)");
+jmq.addListener(jsMediaQuery);
+
 window.addEventListener("load", function loadArray() {
    bubbleArray = returnById("bubbleContainer").children;
-   interval = setInterval(next, 4000)
+   interval = setInterval(next, 4000);
+   jsMediaQuery(jmq);
    })
+
+
 
 /* Two conditions: hidden and visible menu. Use display property to achieve this. The 
 first condition could check to see if the menu is there. If it's not, make it appear. 
@@ -164,7 +169,6 @@ function expandOrCompress() {
 		returnById("trueParagraphContainer").style.marginLeft = "0%";
 		returnById("imageHeader2").style.opacity = 1;
 		returnById("trueParagraph1").style.opacity = 1;
-		returnById("secondHeader").style.opacity = 1;
 		returnById("imageHeader").style.opacity = 0;
 		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225"
 		clearInterval(interval);
@@ -179,7 +183,6 @@ function expandOrCompress() {
 		returnById("imageHeader2").style.opacity = 0;
 		returnById("trueParagraph1").style.opacity = 0;
 		returnById("imageHeader").style.opacity = 0;
-		returnById("secondHeader").style.opacity = 0;
 		bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad"
 		resetInterval();
 		setTimeout(function() {

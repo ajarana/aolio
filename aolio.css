@@ -244,10 +244,6 @@ only screen and (max-device-width : 1200px){
 #imageHeader2 {
 	transition: opacity 0.4s linear 0s;
 }
-@media only screen and (max-width : 1200px),
-only screen and (max-device-width : 1200px){
-#imageHeader2 {opacity: 1!important;}
-}
 
 #imageHeader2 h2 {
 	border-bottom: 1px solid #da2225;
@@ -259,7 +255,7 @@ only screen and (max-device-width : 1200px){
 }
 @media only screen and (max-width : 1200px),
 only screen and (max-device-width : 1200px){
-#imageHeader2 h2 {opacity: 1!important; padding: 0 10px; padding-bottom: 2px;}
+#imageHeader2 h2 {padding: 0 10px; padding-bottom: 2px;}
 }
 @media only screen and (max-device-width : 350px){
 #imageHeader2 h2 {font-size: 1.4em}
@@ -346,10 +342,6 @@ only screen and (max-device-width : 1200px){
 	line-height: 1.7em;
 	font-size:1em;
 	transition: opacity 0.3s linear 0s;
-}
-@media only screen and (max-width : 1200px),
-only screen and (max-device-width : 1200px){
-#trueParagraphContainer p {opacity: 1!important;}
 }
 
 #newParagraphHolder p {
