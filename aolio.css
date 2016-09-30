@@ -311,6 +311,7 @@ only screen and (max-device-width : 1200px){
 #theimage {
 	transition: opacity 0.4s linear 0s, border-color 0.2s linear 0s; 
 	max-width: 200%;
+	background-color: #f4f4f4;
 }
 @media only screen and (max-device-width : 900px){
 #theimage {max-width: none; width: 100%;}

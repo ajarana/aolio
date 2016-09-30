@@ -48,13 +48,13 @@ CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9 CLG > C9
 var imgArray = new Array();
 
 imgArray[0] = new Image();
-imgArray[0].src = 'home2.png';
+imgArray[0].src = 'BrendanOttenPicture.jpg';
 
 imgArray[1] = new Image();
-imgArray[1].src = 'forum2.png';
+imgArray[1].src = 'doublelift.jpg';
 
 imgArray[2] = new Image();
-imgArray[2].src = 'comments2.png';
+imgArray[2].src = 'theman.png';
 
 var bubbleIndex = resetBubble = 0;
 
@@ -130,23 +130,6 @@ function transformBubbleAndParagraph(bubbleIndex, resetBubble) {
 	returnById("imageHeader").style.opacity = 1;
 	}, 400);
 	} 
-	if (document.documentElement.clientWidth < 1200) {
-		bubbleArray[bubbleIndex].style.backgroundColor = "pink";
-		returnById("imageHeader").style.opacity = 0;
-		returnById("theimage").style.opacity = 0;
-		returnById("imageHeader2").style.opacity = 0;
-		returnById("trueParagraph1").style.opacity = "0!important";
-		setTimeout(function(){
-		returnById("theimage").style.opacity = 1;
-		returnById("imageHeader").style.opacity = 1;
-		returnById("imageHeader2").style.opacity = 1;
-		returnById("trueParagraph1").style.opacity = 1;
-		returnById("theimage").src = imgArray[bubbleIndex].src;
-		returnById("firstHeader").innerHTML = headerArray[bubbleIndex];
-		returnById("secondHeader").innerHTML = headerArray[bubbleIndex];
-		returnById("trueParagraph1").innerHTML = paragraphArray[bubbleIndex];
-		}, 400);
-	}
 }
 
 function next() {
