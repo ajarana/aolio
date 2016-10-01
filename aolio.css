@@ -242,7 +242,7 @@ only screen and (max-device-width : 1200px){
 }
 
 #imageHeader2 {
-	transition: opacity 0.4s linear 0s;
+	transition: opacity 0.4s linear 0.4s;
 }
 
 #imageHeader2 h2 {
@@ -251,7 +251,6 @@ only screen and (max-device-width : 1200px){
 	padding-right: 15px;
 	margin-right: 20px;
 	font-size: 1.3em;
-	transition: opacity 0.4s linear 0.4s;
 }
 @media only screen and (max-width : 1200px),
 only screen and (max-device-width : 1200px){
@@ -319,7 +318,7 @@ only screen and (max-device-width : 1200px){
 	position: relative;
 	z-index: 9;
 	justify-content: flex-end;
-	transition: margin-left 0.3s linear 0s;
+	transition: margin-left 0.4s linear 0s;
 }
 @media only screen and (max-width : 1200px),
 only screen and (max-device-width : 1200px){
@@ -341,7 +340,7 @@ only screen and (max-device-width : 1200px){
 	text-align: justify;
 	line-height: 1.7em;
 	font-size:1em;
-	transition: opacity 0.3s linear 0s;
+	transition: opacity 0.4s linear 0s;
 }
 
 #newParagraphHolder p {
