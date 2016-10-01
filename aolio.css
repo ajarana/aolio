@@ -242,7 +242,7 @@ only screen and (max-device-width : 1200px){
 }
 
 #imageHeader2 {
-	transition: opacity 0.4s linear 0.5s;
+	transition: opacity 0.4s linear 0.4s;
 }
 
 #imageHeader2 h2 {
