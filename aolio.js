@@ -139,6 +139,7 @@ function jsMediaQuery(jmq){
   returnById("trueParagraph1").style.opacity = 1;
   returnById("imageHeader2").style.opacity = 1;
   returnById("secondHeader").style.opacity = 1;
+  returnById("secondHeader").style.transition = "opacity 0.4s linear 0s";
   resetInterval();
   
  }
