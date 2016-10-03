@@ -146,7 +146,8 @@ function jsMediaQuery(jmq){
  else{
   returnById("trueParagraphContainer").style.display = "flex";
   returnById("trueParagraph1").style.opacity = 0;
-  returnById("imageHeader2").style.opacity = 0;  
+  returnById("imageHeader2").style.opacity = 0;
+returnById("secondHeader").style.transition = "opacity 0.4s linear 0.4s";  
   resetInterval();
  }
 }
