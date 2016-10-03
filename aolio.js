@@ -185,6 +185,7 @@ function expandOrCompress() {
 	else {
 		returnById("trueParagraphContainer").style.marginLeft = "-50%";
 		returnById("imageHeader2").style.opacity = 0;
+		returnById("secondHeader").style.opacity = 0;
 		returnById("trueParagraph1").style.opacity = 0;
 		returnById("imageHeader").style.opacity = 0;
 		bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad"
