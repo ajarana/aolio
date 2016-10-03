@@ -242,7 +242,7 @@ only screen and (max-device-width : 1200px){
 }
 
 #imageHeader2 {
-	transition: opacity 0.4s linear 0.4s;
+	transition: opacity 0.4s linear 0s;
 }
 
 #imageHeader2 h2 {
@@ -251,6 +251,7 @@ only screen and (max-device-width : 1200px){
 	padding-right: 15px;
 	margin-right: 20px;
 	font-size: 1.3em;
+	transition: opacity 0.4s linear 0.4s;
 }
 @media only screen and (max-width : 1200px),
 only screen and (max-device-width : 1200px){
