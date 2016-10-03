@@ -138,6 +138,7 @@ function jsMediaQuery(jmq){
   bubbleArray[bubbleIndex].style.backgroundColor = "#2b6dad";
   returnById("trueParagraph1").style.opacity = 1;
   returnById("imageHeader2").style.opacity = 1;
+  returnById("secondHeader").style.opacity = 1;
   resetInterval();
   
  }
