@@ -156,7 +156,7 @@ jmq.addListener(jsMediaQuery);
 
 window.addEventListener("load", function loadArray() {
    bubbleArray = returnById("bubbleContainer").children;
-   interval = setInterval(next, 4000);
+   interval = setInterval(next, 6000);
    jsMediaQuery(jmq);
    })
 
