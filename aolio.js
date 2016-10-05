@@ -122,8 +122,6 @@ function next() {
 function resetInterval() {
 	if (returnById("trueParagraphContainer").style.marginLeft !== "-50%" && returnById("trueParagraphContainer").style.display == "flex") {
 		bubbleArray[bubbleIndex].style.backgroundColor = "#da2225";
-		returnById("trueParagraph1").style.opacity = 1;
-		returnById("imageHeader2").style.opacity = 1;
 		clearInterval(interval);
 	}
 	else {
