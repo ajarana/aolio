@@ -81,11 +81,11 @@ only screen and (max-device-width : 1200px){
 	color: #5b5b5b;
 	margin-right: 65px;
 	font-size: 1em;
+	transition: color 0.2s linear 0s
 }
 
 #header a:hover {
-	color: #ccc;
-	transition: color 0.15s linear 0s
+	color: #a1a1a1;
 }
 
 .aolioIcon { 
@@ -93,7 +93,7 @@ only screen and (max-device-width : 1200px){
 	width: 50%;
 }
 
-.aolioIcon #aolio {padding-left: 40px; font-size: 1.4em; color: #333}
+.aolioIcon #aolio {position: relative; z-index: 100; padding-left: 40px; font-size: 1.4em; color: #333}
 @media only screen and (max-device-width : 900px){
 .aolioIcon #aolio {padding-left: 50px;}
 }
@@ -469,6 +469,9 @@ only screen and (max-device-width : 1200px){
 @media only screen and (max-device-width : 1200px){
 #emailHeader {padding-top: 20px!important}
 }
+@media only screen and (max-device-width : 900px){
+#emailHeader {padding: 0!important; padding-top: 20px!important}
+}
 
 @media only screen and (max-device-width : 900px){
 #emailHeader #headerPosition {width: 85%!important}
@@ -506,35 +509,212 @@ only screen and (max-device-width : 1200px){
 @media only screen and (max-device-width : 500px){
 #email input {padding: 30px 0!important; padding-left: 30px!important;}
 }
-/*@media only screen and (max-device-width : 400px){
-#email input {padding: 35px 0!important; padding-left: 30px!important;}
-}*/
 
-@media only screen and (max-width : 1200px),
-only screen and (max-device-width : 1200px){
-#form {padding-bottom: 60px!important}
-}
-@media only screen and (max-device-width : 1200px){
-#form {padding-bottom: 100px!important}
+
+
+/* ABOUT */
+
+#aboutInfo {
+	padding-bottom: 100px;
 }
 @media only screen and (max-device-width : 900px){
-#form {padding: 0!important; padding-bottom: 175px!important}
+#aboutInfo {padding-bottom: 175px}
 }
 @media only screen and (max-device-width : 700px){
-#form {padding: 0!important; padding-bottom: 250px!important}
+#aboutInfo {padding-bottom: 250px}
 }
 @media only screen and (max-device-width : 500px){
-#form {padding: 0!important; padding-bottom: 325px!important}
+#aboutInfo {padding-bottom: 325px}
 }
 @media only screen and (max-device-width : 400px){
-#form {padding: 0!important; padding-bottom: 400px!important}
+#aboutInfo {padding-bottom: 400px}
 }
 
+#aboutCentered {
+	max-width: 568px;
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-top: 50px;
+	display: flex; 
+	justify-content: center;
+}
 @media only screen and (max-device-width : 900px){
-#form #formPosition{width: 85%!important}
+#aboutCentered {padding-top: 60px; max-width: 85%;}
+}
+@media only screen and (max-device-width : 700px){
+#aboutCentered {padding-top: 70px}
 }
 @media only screen and (max-device-width : 500px){
-#form #formPosition{width: 90%!important}
+#aboutCentered {padding-top: 80px; max-width: 90%;}
+}
+@media only screen and (max-device-width : 400px){
+#aboutCentered {padding-top: 90px}
+}
+
+#aboutCentered h1 {
+	display: inline-block;
+	padding-right: 28px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	color: #2b6dad;
+	border-bottom: 1px solid #ccc;
+}
+
+#aboutCentered p {
+	font-size: 1.1em;
+	line-height: 1.7em;
+	padding-bottom: 3px;
+	color: #333;
+}
+
+#aboutCentered ul {
+	font-size: 1.1em;
+	line-height: 1.9em;
+	color: #333;
+	list-style: none;
+	margin-top: 20px;
+}
+
+#aboutCentered ul li:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #da2225;
+	border-radius: 100%;
+	list-style: none;
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+@media only screen and (max-device-width : 900px){
+#aboutCentered ul li:before {margin-bottom: 4px;}
+}
+@media only screen and (max-device-width : 700px){
+#aboutCentered ul li:before {width: 10px; height: 10px;}
+}
+
+#aboutCentered a {
+	font-size: 1 em;
+	color: #da2225;
+	text-decoration: none;
+	transition: color 0.2s linear 0s;
+}
+
+#aboutCentered a:hover {
+	color: #fa2225;
+}
+
+
+
+/* CONTACT */
+
+#contactCentered {
+	max-width: 1136px;
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-top: 100px;
+	display: flex; 
+	justify-content: center;
+}
+@media only screen and (max-device-width : 900px){
+#contactCentered {padding-top: 130px}
+}
+@media only screen and (max-device-width : 700px){
+#contactCentered {padding-top: 160px}
+}
+@media only screen and (max-device-width : 500px){
+#contactCentered {padding-top: 190px}
+}
+@media only screen and (max-device-width : 400px){
+#contactCentered {padding-top: 220px}
+}
+
+#contactCentered #contactInfoContainer {
+	
+}
+
+#contactCentered h1 {
+	display: inline-block;
+	padding-right: 28px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	color: #2b6dad;
+	border-bottom: 1px solid #ccc;
+}
+
+#contactCentered p {
+	font-size: 1.1em;
+	padding-bottom: 3px;
+	color: #333;
+}
+
+#contactCentered a {
+	font-size: 1 em;
+	color: #da2225;
+	text-decoration: none;
+	transition: color 0.2s linear 0s;
+}
+
+#contactCentered a:hover {
+	color: #fa2225;
+}
+
+
+
+/* BLOG */
+
+#blogCentered {
+	max-width: 1136px;
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-top: 100px;
+	display: flex; 
+	justify-content: center;
+}
+@media only screen and (max-device-width : 900px){
+#blogCentered {padding-top: 130px}
+}
+@media only screen and (max-device-width : 700px){
+#blogCentered {padding-top: 160px}
+}
+@media only screen and (max-device-width : 500px){
+#blogCentered {padding-top: 190px}
+}
+@media only screen and (max-device-width : 400px){
+#blogCentered {padding-top: 220px}
+}
+
+#blogCentered #blogInfoContainer {
+	
+}
+
+#blogCentered h1 {
+	display: inline-block;
+	padding-right: 28px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	color: #2b6dad;
+	border-bottom: 1px solid #ccc;
+}
+
+#blogCentered p {
+	font-size: 1.1em;
+	padding-bottom: 3px;
+	color: #333;
+}
+
+#blogCentered a {
+	font-size: 1 em;
+	color: #da2225;
+	text-decoration: none;
+	transition: color 0.2s linear 0s;
+}
+
+#blogCentered a:hover {
+	color: #fa2225;
 }
 
 
@@ -585,6 +765,8 @@ only screen and (max-device-width : 1200px){
 
 #footerLinks .linkHolder {
 	display: inline-block;
+	position: relative;
+	z-index: 100;
 }
 @media only screen and (max-width : 1000px),
 only screen and (max-device-width : 1000px){
@@ -602,6 +784,7 @@ only screen and (max-device-width : 500px){
 	color: white;
 	margin-right: 65px;
 	text-decoration: none;
+	transition: color 0.2s linear 0s;
 }
 @media only screen and (max-width : 1000px),
 only screen and (max-device-width : 1000px){
@@ -617,6 +800,10 @@ only screen and (max-device-width : 500px){
 
 #footerLinks .linkHolder a:last-child {
 	margin-right: 0;
+}
+
+#footerLinks .linkHolder a:hover {
+	color: #ccc;
 }
 
 #socialMedia {
@@ -644,6 +831,7 @@ only screen and (max-device-width : 500px){
 #socialmedia .socialIcon {
 	margin-left: 24px;
 	cursor: pointer;
+	transition: opacity 0.1s linear 0s;
 }
 @media only screen and (max-device-width : 900px){
 #socialMedia .socialIcon {height: 48px; width: 48px;}
@@ -654,6 +842,10 @@ only screen and (max-device-width : 500px){
 }
 @media only screen and (max-device-width : 500px){
 #socialMedia .socialIcon{margin-left: 24px;}
+}
+
+#socialmedia .socialIcon:hover {
+	opacity: 0.80;
 }
 
 #youtube {

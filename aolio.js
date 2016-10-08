@@ -143,13 +143,16 @@ function jsMediaQuery(jmq){
  }
  else{
   returnById("trueParagraphContainer").style.display = "flex";
+  returnById("secondHeader").style.transition = "opacity 0.4s linear 0.4s";
   if (returnById("trueParagraphContainer").style.marginLeft == "-50%") {
 	returnById("trueParagraph1").style.opacity = 0;
-	returnById("imageHeader2").style.opacity = 0;  
+	returnById("imageHeader2").style.opacity = 0; 
+	returnById("secondHeader").style.opacity = 0;	
   }
   else {
 	returnById("trueParagraph1").style.opacity = 1;
-	returnById("imageHeader2").style.opacity = 1;  
+	returnById("imageHeader2").style.opacity = 1; 
+	returnById("secondHeader").style.opacity = 1;	
   }
   resetInterval();
  }
