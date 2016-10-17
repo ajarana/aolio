@@ -122,11 +122,11 @@
 
 			<div id="imageHolder" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
 				<div id="actualImage"> 
-					<img id ="theimage" src="home2.png" width="568px"> 
+					<img id="theimage" src="home2.png" width="568px" onclick="enlarge()"> 
 				</div>
 			</div>
 		</div>	
-		<div id="trueParagraphContainer" style="margin-left: -50%">
+		<div id="trueParagraphContainer" style="margin-left: -50%;">
 			<div id="trueParagraphAlign">
 				<div class="headerArrowParent" id="imageHeaderHolder2">
 					<div class="headerAndArrow" id="imageHeader2" style="opacity: 0" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
@@ -141,6 +141,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div id="bubbleParent">
 			<div id="bubbleContainer" onmouseover="clearInterval(interval), redBubble()" onmouseout="resetInterval(), regularBubble()">
 				<div style="background-color: #2b6dad" class="bubble" id="bubble1" onclick="transformBubbleAndParagraph(0,1)"></div>
@@ -151,6 +152,12 @@
 	</div>
 	</div>
 
+	<div id="fixedPanel" style="display: none" onclick="hidePanel()">
+		<div id="panelCentered" onmouseover="clearInterval(interval)"> 
+			<img id="theimage2" width="100%">
+		</div>
+	</div>
+	
 	<div id="emailHeader" style="display: flex; justify-content: center; padding: 0 10px; padding-top: 50px;">
 		<div id="headerPosition" style="width: 568px;">
 			<h2 style="margin: 20px 0; font-size: 1.5em;">Tell me when it's ready</h2>

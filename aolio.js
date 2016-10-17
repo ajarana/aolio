@@ -203,3 +203,15 @@ function expandOrCompress() {
 		}, 500);
 	}	
 }
+
+function enlarge() {
+  returnById("fixedPanel").style.display = "block";
+  returnById("imagePosition").style.opacity = 0;
+  returnById("theimage2").src = imgArray[bubbleIndex].src;
+}
+
+function hidePanel() {
+  returnById("fixedPanel").style.display = "none";
+  returnById("imagePosition").style.opacity = 1;
+  resetInterval();
+}
