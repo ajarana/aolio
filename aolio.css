@@ -324,6 +324,7 @@ only screen and (max-device-width : 1200px){
 }
 
 #fixedPanel {
+	cursor: pointer;
 	position: fixed;
 	z-index: 100;
 	top: 0;
