@@ -369,7 +369,6 @@ only screen and (max-device-width : 1200px){
 }
 
 #trueParagraphContainer p {
-	text-align: justify;
 	line-height: 1.7em;
 	font-size:1em;
 	transition: opacity 0.4s linear 0s;
