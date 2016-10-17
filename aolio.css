@@ -638,13 +638,13 @@ only screen and (max-device-width : 1200px){
 	justify-content: center;
 }
 @media only screen and (max-device-width : 900px){
-#contactCentered {padding-top: 130px}
+#contactCentered {padding-top: 130px; max-width: 85%}
 }
 @media only screen and (max-device-width : 700px){
 #contactCentered {padding-top: 160px}
 }
 @media only screen and (max-device-width : 500px){
-#contactCentered {padding-top: 190px}
+#contactCentered {padding-top: 190px; max-width: 90%}
 }
 @media only screen and (max-device-width : 400px){
 #contactCentered {padding-top: 220px}
@@ -666,7 +666,8 @@ only screen and (max-device-width : 1200px){
 
 #contactCentered p {
 	font-size: 1.1em;
-	padding-bottom: 3px;
+	line-height: 1.4em;
+	padding-bottom: 8px;
 	color: #333;
 }
 
