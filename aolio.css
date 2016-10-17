@@ -90,6 +90,10 @@ only screen and (max-device-width : 1200px){
 .aolioIcon { 
 	position: relative; 
 	width: 50%;
+	transition: opacity 0.2s linear 0s;
+}
+.aolioIcon:hover {
+	opacity: 0.6
 }
 
 .aolioIcon #aolio {position: relative; z-index: 100; padding-left: 40px; font-size: 1.4em; color: #333}
@@ -257,6 +261,13 @@ only screen and (max-device-width : 1200px){
 }
 @media only screen and (max-device-width : 350px){
 #imageHeader2 h2 {font-size: 1.4em}
+}
+
+#expHolder {
+	transition: opacity 0.1s linear 0s;
+}
+#expHolder:hover #expandAndCompress {
+	opacity: 0.6;
 }
 
 #expandAndCompress {
@@ -578,7 +589,7 @@ only screen and (max-device-width : 1200px){
 	letter-spacing: 1px;
 	font-size: 1.5em;
 	color: #2b6dad;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #c6c6c6;
 }
 
 #aboutCentered p {
@@ -599,13 +610,13 @@ only screen and (max-device-width : 1200px){
 #aboutCentered ul li:before {
 	content: "";
 	display: inline-block;
-	width: 8px;
-	height: 8px;
+	width: 6px;
+	height: 6px;
 	background-color: #da2225;
 	border-radius: 100%;
 	list-style: none;
 	margin-right: 5px;
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 }
 @media only screen and (max-device-width : 900px){
 #aboutCentered ul li:before {margin-bottom: 4px;}
@@ -661,7 +672,7 @@ only screen and (max-device-width : 1200px){
 	letter-spacing: 1px;
 	font-size: 1.5em;
 	color: #2b6dad;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #c6c6c6;
 }
 
 #contactCentered p {
@@ -718,7 +729,7 @@ only screen and (max-device-width : 1200px){
 	letter-spacing: 1px;
 	font-size: 1.5em;
 	color: #2b6dad;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #c6c6c6;
 }
 
 #blogCentered p {

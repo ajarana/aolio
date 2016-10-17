@@ -126,7 +126,7 @@ function resetInterval() {
 	}
 	else {
 		clearInterval(interval);
-		interval = setInterval(next, 4000);
+		interval = setInterval(next, 6000);
 	}
 }
 
