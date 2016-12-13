@@ -7,7 +7,7 @@ var headerArray = ["All your news and interests", "A community for everyone", "V
 var paragraphArray = ["Whether you want to browse the latest news, discuss trending topics, submit\
 				something you found interesting, or any combination of the above, Aolio can accomplish it. Easily customize your\
 				feed and keep track of all news and discussions you find interesting.", "Moderated and unmoderated communities \
-				each offer their own unique of advantages. Try a moderated community for a more controlled environment, or enjoy (near) complete \
+				each offer their own unique advantages. Try a moderated community for a more controlled environment, or enjoy (near) complete \
 				freedom in an unmoderated community. You ultimately have the choice to decide on the content that's most \
 				interesting and relevant to you.", "Everything that's submitted is subject to a voting system. The community gets to decide on what they find \
 				the most interesting and subsequently what will be on the front page for all to see. Users can also vote on comments \
